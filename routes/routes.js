@@ -8,7 +8,7 @@ import {
 } from "../controllers/BookController.js";
 import requireAuth from "../middleware/authMiddleware.js";
 import requireAdmin from "../middleware/requireAdmin.js";
-
+router.get("/", getBooks);
 const router = express.Router();
 router.use(requireAuth);
 
